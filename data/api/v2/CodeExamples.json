@@ -469,6 +469,13 @@
       "description": "Delete a tag configuration returns \"No Content\" response"
     }
   ],
+  "ListActiveConfigurations": [
+    {
+      "group": "metrics",
+      "suffix": "",
+      "description": "List active tags and aggregations returns \"Success\" response"
+    }
+  ],
   "ListVolumesByMetricName": [
     {
       "group": "metrics",

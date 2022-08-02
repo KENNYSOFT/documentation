@@ -4717,7 +4717,7 @@ api:
       operationids:
         - ListVolumesByMetricName
       unstable: []
-      order: 7
+      order: 8
   - name: Create a tag configuration
     url: '#create-a-tag-configuration'
     identifier: metrics-create-a-tag-configuration
@@ -4777,7 +4777,7 @@ api:
       operationids:
         - EstimateMetricsOutputSeries
       unstable: []
-      order: 10
+      order: 11
   - name: List tags by metric name
     url: '#list-tags-by-metric-name'
     identifier: metrics-list-tags-by-metric-name
@@ -4790,6 +4790,18 @@ api:
         - ListTagsByMetricName
       unstable: []
       order: 6
+  - name: List active tags and aggregations
+    url: '#list-active-tags-and-aggregations'
+    identifier: metrics-list-active-tags-and-aggregations
+    parent: metrics
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - ListActiveConfigurations
+      unstable: []
+      order: 7
   - name: Configure tags for multiple metrics
     url: '#configure-tags-for-multiple-metrics'
     identifier: metrics-configure-tags-for-multiple-metrics
@@ -4802,7 +4814,7 @@ api:
         - DeleteBulkTagsMetricsConfiguration
         - CreateBulkTagsMetricsConfiguration
       unstable: []
-      order: 9
+      order: 10
   - name: List tag configurations
     url: '#list-tag-configurations'
     identifier: metrics-list-tag-configurations

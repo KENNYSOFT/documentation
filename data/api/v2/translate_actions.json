@@ -324,7 +324,7 @@
     "request_schema_description": "The request for a logs list."
   },
   "ListTagConfigurations": {
-    "description": "Returns all configured count/gauge/rate/distribution metric names\n(with additional filters if specified).",
+    "description": "Returns all metrics and tag configured metrics if any\n(with additional filters if specified).",
     "summary": "List tag configurations"
   },
   "DeleteBulkTagsMetricsConfiguration": {
@@ -338,6 +338,10 @@
     "summary": "Configure tags for multiple metrics",
     "request_description": "",
     "request_schema_description": "Wrapper object for a single bulk tag configuration request."
+  },
+  "ListActiveConfigurations": {
+    "description": "List tags and aggregations that are actively queried on dashboards and monitors for a given metric name.",
+    "summary": "List active tags and aggregations"
   },
   "ListTagsByMetricName": {
     "description": "View indexed tag key-value pairs for a given metric name.",
